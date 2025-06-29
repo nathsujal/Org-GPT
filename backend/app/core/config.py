@@ -38,11 +38,11 @@ class Settings(BaseSettings):
     SESSION_EXPIRE_HOURS: int = 24
     
     # LLM settings
-    GROQ_API_KEY: str = "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"
+    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY")
     GROQ_MODEL: str = "llama3-8b-8192"
     
     # Hugging Face settings
-    HF_API_KEY: str = "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"
+    HF_API_KEY: str = os.getenv("HF_API_KEY")
     EMBEDDING_MODEL: str = "BAAI/bge-large-en-v1.5"
     RERANKER_MODEL: str = "BAAI/bge-reranker-large"
     
