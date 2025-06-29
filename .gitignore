@@ -1,0 +1,6 @@
+.env
+HUGGINGFACE_SETUP.md
+IMPLEMENTATION_SUMMARY.md
+LICENSE
+__pycache__
+.venv
